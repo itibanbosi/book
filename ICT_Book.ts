@@ -96,7 +96,7 @@ namespace eureka_blocks {
         return pins.digitalReadPin(DigitalPin.P16);
   }
 
-  //% color="#e7e371" weight=75 blockId=eureka_denkiwhite block="白LED |%mode|" group="3_電気の利用ユニット"
+  //% color="#a9a9a9" weight=75 blockId=eureka_denkiwhite block="白LED |%mode|" group="3_電気の利用ユニット"
   export function eureka_denkiwhite(mode: onoff) {
 
         if (mode == onoff.ON) {
