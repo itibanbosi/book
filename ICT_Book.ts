@@ -63,7 +63,7 @@ namespace eureka_blocks {
     basic.pause(second * 1000);
   }
 
-  //% color="#009A00"  weight=80 block="光ｾﾝｻ値 |%limit| より暗い" group="3_電気の利用ユニット"
+  //% color="#ff8c00"  weight=80 block="光ｾﾝｻ値 |%limit| より暗い" group="3_電気の利用ユニット"
   //% limit.min=0 limit.max=100
   export function decideLight(limit: number){
 
@@ -75,12 +75,12 @@ namespace eureka_blocks {
     }
 
 
-  //% color="#009A00"  weight=81 blockId=eureka_denkitemp block="光ｾﾝｻ値" group="3_電気の利用ユニット"
+  //% color="#ff8c00"  weight=78 blockId=eureka_denkitemp block="光ｾﾝｻ値" group="3_電気の利用ユニット"
   export function eureka_denkitemp(): number {
         return Math.round((pins.analogReadPin(AnalogPin.P1) / 1023) * 100);
   }
 
-  //% color="#009A00"  weight=81 blockId=eureka_denkilight_disp block="光ｾﾝｻの値を表示する" group="3_電気の利用ユニット"
+  //% color="#ff8c00"  weight=76 blockId=eureka_denkilight_disp block="光ｾﾝｻの値を表示する" group="3_電気の利用ユニット"
   export function eureka_denkilight(){
          basic.showNumber(Math.round((pins.analogReadPin(AnalogPin.P1) / 1023) * 100));
   }
@@ -88,7 +88,7 @@ namespace eureka_blocks {
 
 
 
-  //% color="#009A00" weight=79 block="人が動いたら" group="3_電気の利用ユニット"
+  //% color="#009A00" weight=74 block="人が動いたら" group="3_電気の利用ユニット"
   export function humanDetection(): boolean {
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
         if (pins.digitalReadPin(DigitalPin.P16) == 1) {
@@ -98,13 +98,13 @@ namespace eureka_blocks {
         }
   }
 
-  //% color="#009A00"  weight=77 blockId=eureka_denkihuman block="人感ｾﾝｻ値" group="3_電気の利用ユニット"
+  //% color="#009A00"  weight=72 blockId=eureka_denkihuman block="人感ｾﾝｻ値" group="3_電気の利用ユニット"
   export function eureka_denkihuman(): number {
         pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
         return pins.digitalReadPin(DigitalPin.P16);
   }
 
-  //% color="#009A00"  weight=77 blockId=eureka_denkihuman_disp block="人感ｾﾝｻの値を表示する" group="3_電気の利用ユニット"
+  //% color="#009A00"  weight=70 blockId=eureka_denkihuman_disp block="人感ｾﾝｻの値を表示する" group="3_電気の利用ユニット"
   export function eureka_denkihumandisp() {
         basic.showNumber(pins.digitalReadPin(DigitalPin.P16));
   }
