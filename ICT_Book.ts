@@ -37,7 +37,7 @@ namespace eureka_blocks {
 
   }
 
-  //% color="#ffa500" weight=97 blockId=eureka_tl_yellow block="黄信号 点灯|%mode|" group="2_信号機ユニット"
+  //% color="#ffd700" weight=97 blockId=eureka_tl_yellow block="黄信号 点灯|%mode|" group="2_信号機ユニット"
   export function eureka_tl_yellow(mode: onoff) {
 
         if (mode == onoff.ON) {
