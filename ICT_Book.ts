@@ -15,12 +15,8 @@ enum etc {
 //% color="#74ad1d" block="ﾕｰﾚｶ_ICT_Book"
 namespace eureka_blocks {
 
-    //% blockId=eureka_buz_set
-    //% block=ﾕｰﾚｶIOﾎﾞｯｸｽで音をならす
-    // group="1 設定"
-    //% color="#ff3d03"
-    //% weight=90
 
+    //% color="#ff3d03" weight=90 blockId=eureka_buz_set block="ﾕｰﾚｶIOﾎﾞｯｸｽで音をならす" group="1 設定"
     export function eureka_buz_set() {
     pins.analogSetPitchPin(AnalogPin.P8);
   }
