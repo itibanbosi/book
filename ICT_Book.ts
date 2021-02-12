@@ -17,12 +17,18 @@ namespace eureka_blocks {
 
     //% blockId=eureka_buz_set
     //% block=ﾕｰﾚｶIOﾎﾞｯｸｽで音をならす
-    // group="1 初期設定"
+    // group="1 設定"
     //% color="#ff3d03"
     //% weight=90
 
     export function eureka_buz_set() {
     pins.analogSetPitchPin(AnalogPin.P8);
+  }
+
+  //% color="#1E90FF" weight=89 block="待ち時間（秒）|%second|" group="1 設定"
+  //% second.min=0 second.max=10
+  export function driveForwards(second: number): void {
+    basic.pause(second * 1000);
   }
 
 
@@ -57,11 +63,7 @@ namespace eureka_blocks {
         }
   }
 
-  //% color="#1E90FF" weight=93 block="待ち時間（秒）|%second|" group="2_信号機ユニット"
-  //% second.min=0 second.max=10
-  export function driveForwards(second: number): void {
-    basic.pause(second * 1000);
-  }
+
 
   //% color="#ff8c00"  weight=80 block="光ｾﾝｻ値 |%limit| より暗い" group="3_電気の利用ユニット"
   //% limit.min=0 limit.max=100
