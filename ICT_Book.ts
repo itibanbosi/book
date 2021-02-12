@@ -26,7 +26,7 @@ namespace eureka_blocks {
   }
 
 
-    //% color="#4741f1" weight=89 blockId=eureka_tl_blue block="青信号 点灯|%mode|" group="2_信号機ユニット"
+    //% color="#4741f1" weight=99 blockId=eureka_tl_blue block="青信号 点灯|%mode|" group="2_信号機ユニット"
     export function eureka_tl_blue(mode: onoff) {
     
         if (mode == onoff.ON) {
@@ -37,7 +37,7 @@ namespace eureka_blocks {
 
   }
 
-  //% color="#ffa800" weight=87 blockId=eureka_tl_yellow block="黄信号 点灯|%mode|" group="2_信号機ユニット"
+  //% color="#ffa800" weight=97 blockId=eureka_tl_yellow block="黄信号 点灯|%mode|" group="2_信号機ユニット"
   export function eureka_tl_yellow(mode: onoff) {
 
         if (mode == onoff.ON) {
@@ -47,7 +47,7 @@ namespace eureka_blocks {
         }
   }
 
-  //% color="#ff4940" weight=85 blockId=eureka_tl_red block="赤信号 点灯|%mode|" group="2_信号機ユニット"
+  //% color="#ff4940" weight=95 blockId=eureka_tl_red block="赤信号 点灯|%mode|" group="2_信号機ユニット"
   export function eureka_tl_red(mode: onoff) {
 
         if (mode == onoff.ON) {
@@ -57,7 +57,7 @@ namespace eureka_blocks {
         }
   }
 
-  //% color="#1E90FF" weight=83 block="待ち時間（秒）|%second|" group="2_信号機ユニット"
+  //% color="#1E90FF" weight=93 block="待ち時間（秒）|%second|" group="2_信号機ユニット"
   //% second.min=0 second.max=10
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
@@ -111,7 +111,7 @@ namespace eureka_blocks {
 
 
 
-  //% color="#a9a9a9" weight=75 blockId=eureka_denkiwhite block="白LED |%mode|" group="3_電気の利用ユニット"
+  //% color="#a9a9a9" weight=86 blockId=eureka_denkiwhite block="白LED |%mode|" group="3_電気の利用ユニット"
   export function eureka_denkiwhite(mode: onoff) {
 
         if (mode == onoff.ON) {
