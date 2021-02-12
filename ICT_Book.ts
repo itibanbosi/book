@@ -80,6 +80,14 @@ namespace eureka_blocks {
         return Math.round((pins.analogReadPin(AnalogPin.P1) / 1023) * 100);
   }
 
+  //% color="#009A00"  weight=81 blockId=eureka_denkilight_disp block="光ｾﾝｻ値を調べる" group="3_電気の利用ユニット"
+  export function eureka_denkilight(){
+         basic.showNumber(Math.round((pins.analogReadPin(AnalogPin.P1) / 1023) * 100));
+  }
+
+
+
+
   //% color="#009A00" weight=79 block="人が動いたら" group="3_電気の利用ユニット"
   export function humanDetection(): boolean {
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
